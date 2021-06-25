@@ -85,16 +85,18 @@ h6 { font-size: 16px;}
 	border-right:1px solid var(--borderColor);
 	border-left:1px solid var(--borderColor);
 	overflow: auto;
+	overflow-x: hidden;
 	width: 1200px;
 	margin: 0 auto;
 }
 
 .s3{
-	background-color: lightgoldenrodyellow;
+	background-color: darkgrey;
 	border-bottom:1px solid var(--borderColor);
 	border-right:1px solid var(--borderColor);
 	border-left:1px solid var(--borderColor);
 	overflow: auto;
+	overflow-x: hidden;
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -202,7 +204,8 @@ h6 { font-size: 16px;}
 
 .left-column{
 	grid-area: left-column;
-	margin-left: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
 	
 }
 
@@ -210,8 +213,8 @@ h6 { font-size: 16px;}
 	grid-area: right-column;
 	display: grid;
 	align-content: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	/* border: 2px dashed lightcoral; */
 }
 
@@ -225,6 +228,7 @@ h6 { font-size: 16px;}
 	display: flex;
 	justify-content: space-evenly;
 	padding-left: 0px;
+
 }
 
 
@@ -234,6 +238,7 @@ h6 { font-size: 16px;}
 	gap: 25px;
 	justify-content: center;
 	margin-bottom: 5%;
+
 }
 
 .thumbnail{
@@ -279,17 +284,12 @@ h6 { font-size: 16px;}
 /* fix to display containers properly for when screen/browser size is smaller */
 @media screen and (max-width: 800px){
 	.main-container{
-		width: 80%;
+		width: 60%;
 }
+
 
 /* fix to display containers properly for when screen/browser size is smaller */
 @media screen and (max-width: 800px){
-	.greeting-wrapper{
-		width: 80%;
-}
-
-/* fix to display containers properly for when screen/browser size is smaller */
-@media screen and (max-width: 700px){
 	.intro-wrapper{
 		grid-template-columns: 1fr;
 		grid-template-rows: 3em 15em;
