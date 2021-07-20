@@ -135,7 +135,7 @@ h6 { font-size: 16px;}
 			'left-column right-column'
 	;
 	/*border: 2px dashed lightcoral;*/
-	height: 350px;
+	height: 400px;
 
 }
 
@@ -216,7 +216,7 @@ h6 { font-size: 16px;}
 	grid-area: right-column;
 	display: grid;
 	align-content: center;
-	padding-top: 0px;
+	padding-top: 10px;
 	padding-bottom: 40px;
 	/* border: 2px dashed lightcoral; */
 }
