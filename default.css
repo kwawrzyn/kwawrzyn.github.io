@@ -135,7 +135,7 @@ h6 { font-size: 16px;}
 			'left-column right-column'
 	;
 	/*border: 2px dashed lightcoral;*/
-	height: 400px;
+	height: 410px;
 
 }
 
@@ -303,6 +303,7 @@ h6 { font-size: 16px;}
 		;
 		height: 550px;
 	}
+
 
 	.right-column{
 		justify-content: center;
