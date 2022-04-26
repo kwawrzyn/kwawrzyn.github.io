@@ -285,6 +285,7 @@ the following flex styles will activate. */
     
   }
 
+  
   nav li{
     flex: 1 1 0;
   }
