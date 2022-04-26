@@ -244,7 +244,7 @@ article hr{
 a.anchor {
   display: block;
   position: relative;
-  top: -50px;
+  top: -30px;
   visibility: hidden;
 }
 
@@ -285,7 +285,7 @@ the following flex styles will activate. */
     
   }
 
-  
+
   nav li{
     flex: 1 1 0;
   }
