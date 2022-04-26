@@ -256,7 +256,7 @@ a.anchor {
 
 /* When screen size is greater than 768, 
 the following flex styles will activate. */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
 
 
   .menu-bar { 
@@ -311,21 +311,23 @@ the following flex styles will activate. */
 
 /* When screen size is smaller than 768, 
 the following flex styles will activate. */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
 
   .project-thumbnail{
     /* display: block; */
-    width: 0;
-    height: 0px;
+    width: 40%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-left: auto;
-    margin-right: auto;
     overflow: hidden;
-    margin-left: 2%;
-    float: left; 
     object-fit: cover;
+    /* margin-left: 2%; */
+    /* float: left;  */
+    
   }
 
   article h2{
