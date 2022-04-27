@@ -293,6 +293,7 @@ the following flex styles will activate. */
   nav{
     display: flex;
     justify-content: space-between;
+    
   }
 
   ul.menu-social{
@@ -343,11 +344,11 @@ the following flex styles will activate. */
 
 /* When screen size is smaller than 768, 
 the following flex styles will activate. */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
 
   .project-thumbnail{
     /* display: block; */
-    width: 300px;
+    width: 350px;
     height: 100%;
     display: block;
     margin-left: auto;
@@ -366,6 +367,12 @@ the following flex styles will activate. */
     flex: 33.33%;
     padding: 5px;
     margin: 0;
+  }
+
+  
+  nav li{
+    flex: 1 1 0;
+    font-size: 25px;
   }
 
 }
