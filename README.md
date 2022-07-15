@@ -1,5 +1,5 @@
 # Portfolio Website for Krzysztof Wawrzyn
 
-This simple project is a second iteration of my personal portfolio website made in HTML and CSS.  It contains a little about me and highlights some of my select projects and accomplishments.
+This project is the second iteration of my personal portfolio website made statically with simple HTML and CSS code.  It showcases some of my select projects and their outcomes.
 
 To view the published version visit here: https://kwawrzyn.ca
