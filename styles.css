@@ -1,0 +1,372 @@
+/* Main Base Styles */
+
+:root{
+  --COLOR_BKGD : #f5f3f4;
+  --COLOR_PG60 : #d3d3d3;
+  --COLOR_PG30 : #660708;
+  --COLOR_PG10 : #b1a7a6;
+  --COLOR_TXT60 : #161a1d;
+  --COLOR_TXT30 : #660708;
+  --COLOR_TXT10 : #f5f3f4;
+  --COLOR_GRAD1 : #161a1d;
+  --COLOR_GRAD2 : #660708;
+  --COLOR_BORDER :#161a1d;
+}
+
+
+p { font-size: 14px;}
+
+h1 { font-size: 36px;}
+h2 { font-size: 30px;}
+h3 { font-size: 24px;}
+h4 { font-size: 22px; font-weight: lighter;}
+h5 { font-size: 20px; font-weight: lighter;}
+h6 { font-size: 16px;}
+
+
+*{
+  font-family: verdana;
+  margin: 0;
+}
+
+body{
+  background: var(--COLOR_BKGD);
+}
+
+.main-wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p::selection, h1::selection, h2::selection{
+  background-color: var(--COLOR_PG30);
+  color: var(--COLOR_TXT10);
+}
+
+
+
+
+/* Banner Base Styles */
+
+.banner{
+  position: relative;
+}
+.banner .banner-text{
+  background-color: var(--COLOR_PG30);
+  background-image: linear-gradient(to bottom right, var(--COLOR_GRAD1), var(--COLOR_GRAD2));
+  color: var(--COLOR_TXT10);
+  padding: 30px;
+  position: sticky;
+  left: 0;
+  top: 30%;
+
+  /* Google search: css shadow generator */
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+
+
+
+/* Menu Base Styles */
+
+nav{
+    background-image: linear-gradient(to bottom right, var(--COLOR_PG10), var(--COLOR_BKGD));
+
+	/* Google search: css shadow generator */
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+  }
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+nav a{
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: var(--COLOR_TXT30);
+  display: block;
+  padding: 12px;
+}
+
+nav a:hover{
+  background-color: var(--COLOR_PG30);
+  color: var(--COLOR_TXT10);
+  
+}
+
+a.gh{Background: url(img/github.png) no-repeat center;
+  background-size: 60%;
+}
+
+a.li{Background: url(img/linkedin.png) no-repeat center;
+  background-size: 60%;
+}
+
+a.gs{Background: url(img/google_scholar.png) no-repeat center;
+  background-size: 60%;
+}
+
+a.rg{Background: url(img/research_gate.png) no-repeat center;
+  background-size: 60%;
+}
+
+.menu-social a{
+  text-indent: -10000px
+}
+
+.menu-social{
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* Flex Styles */
+
+nav ul.menu-social{
+  flex: 1 1 0;
+  display: flex;
+}
+
+nav ul.menu-social li{
+  flex: 1 1 0;
+}
+
+
+
+
+/* Projects Section Styles */
+
+#projects-title{
+  margin-top: 3%;
+  text-align: center;
+  font-size: large;
+  color: var(--COLOR_TXT30);
+}
+
+#projects-containers{
+  margin-top: 3%;
+}
+
+.project-thumbnail{
+  /* display: block; */
+  width: 300px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
+  object-fit: cover;
+  /* margin-left: 2%; */
+  /* float: left;  */
+  
+}
+
+.project-thumbnail:hover{
+  position: relative;
+  top: -4px;
+  
+}
+
+article{
+   margin: 1px;
+  background-image: linear-gradient(to bottom right, var(--COLOR_PG60), var(--COLOR_BKGD));
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom:1px solid var(--COLOR_BORDER);
+	border-right:1px solid var(--COLOR_BORDER);
+	border-left:1px solid var(--COLOR_BORDER);
+  overflow-x: hidden;
+  margin: 3 auto;
+  border: 1px solid var(--borderColor);
+
+	/* Google search: css shadow generator */
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+
+article h2{
+  text-align: center;
+  font-size: 19px;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+article p{
+  margin: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+article hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.outcomes{
+	margin: 5px;
+	text-align: left;
+  color: var(--COLOR_TXT30);
+}
+
+.post a{
+	margin: 0px;
+	text-align: left;
+  color: var(--COLOR_TXT30);
+}
+
+.post a:hover{
+	margin: 0px;
+  position: relative;
+  top: -1px;
+	text-align: left;
+  color: var(--COLOR_TXT60);
+  /* background-color: var(--COLOR_PG30); */
+  
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -30px;
+  visibility: hidden;
+}
+
+
+
+/* Other Projects Section Specific Styles */
+
+#projects-title{
+  margin-top: 5%;
+  text-align: center;
+  /*text-decoration: underline;*/
+  font-size: large;
+  color: var(--COLOR_TXT30);
+}
+
+#projects-containers{
+  margin-top: 3%;
+}
+
+
+/* When screen size is greater than 768, 
+the following flex styles will activate. */
+@media screen and (min-width: 1080px) {
+
+
+  .menu-bar { 
+    position: sticky;
+    top: 0; 
+    z-index: 9999; 
+    width: 100%; 
+    max-width: 960px;
+    vertical-align: middle;
+    
+  }
+
+  nav ul{
+    display: flex;
+    
+  }
+
+
+  nav li{
+    flex: 1 1 0;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  ul.menu-social{
+    margin: 0;
+  }
+  
+  .project-thumbnail{
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+    object-fit: cover;
+    /* margin-left: 2%; */
+    /* float: left;  */
+    
+  }
+
+
+  #projects-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+
+
+  
+  article{
+    flex: 0 1 32%;
+  }
+
+
+  
+}
+
+
+
+/* When screen size is smaller than 768, 
+the following flex styles will activate. */
+@media screen and (max-width: 1080px) {
+
+  .project-thumbnail{
+    /* display: block; */
+    width: 350px;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+    object-fit: cover;
+    /* margin-left: 2%; */
+    /* float: left;  */
+    
+  }
+
+  article h2{
+    flex: 33.33%;
+    padding: 5px;
+    margin: 0;
+  }
+
+  
+  nav li{
+    flex: 1 1 0;
+    font-size: 25px;
+  }
+
+}
