@@ -147,14 +147,14 @@ nav ul.menu-social li{
 
 /* Projects Section Styles */
 
-#notable-projects-title{
+#projects-title{
   margin-top: 5%;
   text-align: center;
   font-size: large;
   color: var(--COLOR_TXT30);
 }
 
-#notable-projects-containers{
+#projects-containers{
   margin-top: 3%;
 }
 
@@ -318,13 +318,7 @@ the following flex styles will activate. */
   }
 
 
-  #notable-projects-containers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
-  }
-
-  #other-projects-containers{
+  #projects-containers{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between
