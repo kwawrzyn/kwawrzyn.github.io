@@ -252,7 +252,7 @@ a.anchor {
 
 /* Other Projects Section Specific Styles */
 
-#other-projects-title{
+#projects-title{
   margin-top: 10%;
   text-align: center;
   text-decoration: underline;
@@ -260,7 +260,7 @@ a.anchor {
   color: var(--COLOR_TXT30);
 }
 
-#other-projects-containers{
+#projects-containers{
   margin-top: 3%;
 }
 
